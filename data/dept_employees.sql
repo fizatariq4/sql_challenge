@@ -7,3 +7,6 @@ CREATE TABLE Dept_Employees (
 
 SELECT * FROM Dept_Employees;
 
+ALTER TABLE dept_manager
+ADD CONSTRAINT fk_employee_number
+FOREIGN KEY (employee_number) REFERENCES Employees (employee_number);
